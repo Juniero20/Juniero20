@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Juniero20
+- 👋 Hi, I’m Nashon
 - 👀 I’m interested in ... Football and adventures 
 - 🌱 I’m currently learning ... HTML and CSS
 - 💞️ I’m looking to collaborate on ... HTML, CSS and Python 
