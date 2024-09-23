@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homelet</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Syne:wght@400..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <main>
+    <header>
+        <div class="logo"><h1> Hømelet.</h1></div>
+        <nav id="navBar">
+            <ul>
+              <li><a href="#aboutus">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="posts.html">Blogs</a></li>
+              <li><a href="#contactus">Contact Us</a></li>
+              <li><a href="#vision">Vision</a></li>
+              <li><a href="#mission">Mission</a></li>
+              <li><a href="signup.php" id="link1" target="_blank">Signup</a></li>
+              <li><a href="login.php" id="link2" target="_blank">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+      <div class="welcome">
+        <h2>Your Property Journey Starts Here</h2>
+        <p>Explore a wide range of residential and commercial properties to buy or rent. Whether you’re looking for a cozy home or a prime business location, we have the perfect options tailored just for you. Start your property journey with us today.</p>
+        <div>
+          <input type="text" class="gsearch" placeholder="residential,commercial, storage units, shops">
+          <input type="button" value="search" class="btn">
+        </div>
+        <div class="explore">
+          <a href="#explore">Explore <i class="fa-solid fa-right-to-bracket"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <article>
+    <div class="about">
+      <h3 id="aboutus">About Us</h3>
+      <p>At Homelet, we understand the challenges and complexities of finding the perfect rental property or the ideal tenant. That's why we've developed a comprehensive platform that seamlessly connects landlords with potential tenants, ensuring a smooth and transparent rental experience for all parties involved. With our user-friendly interface, extensive database of rental listings, and dedicated customer support team, we're here to help you achieve your rental goals.</p>
+    </div>
+    <div class="mission">
+      <h3 id="mission">Mission</h3>
+      <p>Our mission is to foster seamless connections between landlords and tenants, empowering individuals and communities to thrive through accessible, transparent, and trustworthy rental experiences. We strive to simplify the rental process, uphold integrity in all interactions, and cultivate mutually beneficial relationships that enrich lives and spaces.</p>
+    </div>
+    <div class="vision">
+      <h3 id="vision">Vision</h3>
+      <p>Our vision is to revolutionize the rental industry by becoming the premier platform where landlords and tenants alike find not just a place to live, but a true sense of belonging. We envision a future where renting is characterized by seamless experiences, empowered decision-making, and thriving communities. Through innovation, collaboration, and a relentless commitment to customer satisfaction, we aim to redefine the rental landscape, making it more inclusive, efficient, and rewarding for all.</p>
+    </div>
+  </article>
+  <section class="Contact">
+    <div class="contactnote">
+      <h2 id="contactus">Contact Us</h2>
+      <p>Thank you for considering Homelet for your rental needs. Whether you're a landlord looking to list your property or a tenant searching for your next home, we're here to assist you. Here's how you can reach us:</p>
+    </div>
+    <div class="contact1">
+      <div class="contactinfo">
+        <h2>Contact Information</h2>
+        <span class="material-symbols-outlined"style="font-size: 60px">
+          alternate_email
+          </span>
+        <p>Email: info@homelet.co.ke</p>
+        <span class="material-symbols-outlined" style="font-size: 60px">
+          call
+          </span>
+        <p>Phone: +254713975073</p>
+        <span class="material-symbols-outlined"style="font-size: 60px">
+          location_on
+          </span>
+        <p>Address: 2nd Floor, Repen Complex, Katani Road Off Mombasa Road, Room 204, Nairobi, Kenya</p>
+      </div>
+      <!--Quick contact form-->
+  
+      <form class="contact11" id="mailForm" action="php/quickemail.php" method="POST">
+        <h2>Quick Email</h2>
+  
+        <input type="text" class="fname" id="fullname" name="fullname" placeholder="Full Name" required><br>
+  
+        <input type="email" class="email" name="email" id="email" placeholder="Email" required><br>
+  
+        <input type="text" class="location" name="location" id="location" placeholder="Location"><br>
+  
+        <input type="tel" class="tel" name="phone" id="phone" placeholder="Phone" required><br>
+        
+        <textarea name="message" id="message" class="textarea" rows="8" cols="30" placeholder="Message" required></textarea><br>
+  
+        <input type="submit" class="button" value="Submit">
+  
+        <div id="response" class="response-message" style="color: whitesmoke;"></div><!-- For displaying feedback -->
+      </form>
+  
+      <!-- social media handles-->
+      <div class="follow">
+        <h2>Follow us</h2>
+        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></i></a><br>
+        <a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i><br>
+        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></i></a><br>
+        <a href="https://web.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></i></a><br>
+        <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+  </section>
+  <figure>
+    <div class="servhead">
+      <h3 id="services">Our Services</h3>
+      <p>At Homelet, we're committed to providing comprehensive solutions that streamline the rental process for landlords and tenants alike. Our range of services includes:</p>
+    </div>
+    <div class= "servcontainer">
+      <div class = "listing">
+        <span class="material-symbols-outlined" style="font-size: 60px">apartment</span>
+        <h3>Property listing</h3>
+        <p>We offer a user-friendly platform where landlords can list their properties with detailed descriptions, 
+          high-quality photos, and virtual tours, making it easy for potential tenants to find their ideal rental home.</p>
+      </div>
+      <div class="screening">
+        <span class="material-symbols-outlined " style="font-size: 60px">person_search</span>
+        <h3> Tenant screen</h3>
+        <p>We understand the importance of finding reliable tenants. That's why we provide thorough tenant screening services, 
+          including credit checks, background checks, and rental history verification, to ensure peace of mind for landlords.</p>
+      </div>
+      <div class="management">
+        <span class="material-symbols-outlined" style="font-size: 60px">business_center</span>
+        <h3> Property managent </h3>
+        <p>For landlords seeking hassle-free property management, we offer professional services such as rent collection, maintenance coordination, 
+          and tenant communication, allowing landlords to focus on other aspects of their investment.</p>
+      </div>
+      <div class="matching">
+        <span class="material-symbols-outlined" style="font-size: 60px">account_tree</span>
+        <h3>Tenant Matching</h3>
+        <p>Our advanced algorithms and personalized matching services help tenants find properties that meet their specific needs and preferences, 
+          whether it's location, budget, amenities, or pet-friendly accommodations.</p>
+      </div>
+      <div class="lease">
+        <span class="material-symbols-outlined" style="font-size: 60px">handshake</span>
+        <h3>Lease Management</h3>
+        <p>We facilitate the lease agreement process, providing templates, guidance, 
+          and electronic signatures to ensure legal compliance and smooth transactions for both landlords and tenants.</p>
+      </div>
+      <div class="support">
+        <span class="material-symbols-outlined" style="font-size: 60px">support_agent</span>
+        <h3>Customer Support</h3>
+        <p>Our dedicated customer support team is available to assist landlords and tenants with any questions, 
+          concerns, or issues they may have throughout the rental process, ensuring a positive experience from start to finish.</p>
+      </div>
+      <div class="resources">
+        <span class="material-symbols-outlined" style="font-size: 60px">leaderboard</span>
+        <h3>Educational Resources</h3>
+        <p>We believe in empowering both landlords and tenants with knowledge and resources to make informed decisions. 
+          That's why we offer educational materials, guides, and seminars on topics such as rental laws, tenant rights, property maintenance, and more.</p>
+      </div>
+      <div class="feedback">
+        <span class="material-symbols-outlined"style="font-size: 60px">star</span>
+        <h3>Feedback and Reviews</h3>
+        <p>We value feedback from our users and encourage landlords and tenants to leave reviews and ratings, 
+          helping to maintain transparency and accountability within our community.</p>
+      </div>
+    </div>
+  </figure>
+  <footer>
+    <div class="col1">
+      <p>Contact Us On</p>
+      <p>Tel: +254713975073</p>
+      <p>Email: info@homelet.co.ke</p>
+      <p>2nd Floor, Repen Complex, Room 204</p>
+      <p>Katani Road Off Mombasa Road</p>
+      <p>P. O. Box 104272 - 00101</p>
+      <p>Nairobi, Kenya</p>
+    </div>
+    <div class="col2">
+      <p><a href="#aboutus">About Us</a></p>
+      <p><a href="#services">Our Services</a></p>
+      <p><a href="#posts">Posts</a></p>
+      <p><a href="#vision">Vision</a></p>
+      <p><a href="#mission">Mission</a></p>
+    </div>
+    <div class="col3">
+      <h4>Follow Us</h4>
+      <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f" style="font-size: 18px;"></i></a>
+      <a href="https://www.instagram.com" target="_blank" ></a><i class="fa-brands fa-instagram" style="font-size: 18px;"></i></i>
+      <a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter" style="font-size: 18px;"></i></a>
+      <a href="#whatsapp" target="_blank"></a><i class="fa-brands fa-whatsapp" style="font-size: 18px;"></i></i>
+      <a href="tiktok.com" target="_blank"></a><i class="fa-brands fa-tiktok" style="font-size: 18px;"></i>
+      <p>&copy; Homelet Company Copyright 2024</p>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>
