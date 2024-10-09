@@ -19,7 +19,7 @@ h2, h3 {
 /* Main */
 main {
     width: 100%;
-    background-image: url("home.jpg");
+    background-image: url("images/home.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,13 +30,13 @@ main {
 
 @keyframes backgroundTransition {
     0% {
-        background-image: url('home.jpg');
+        background-image: url('images/home.jpg');
     }
     50% {
-        background-image: url('chairs.jpg');
+        background-image: url('images/chairs.jpg');
     }
     100% {
-        background-image: url('furniture.jpg');
+        background-image: url('images/furniture.jpg');
     }
 }
 
@@ -158,7 +158,7 @@ section {
 .Contact {
     margin: 0;
     padding: 0;
-    background-image: url('wall2.jpg');
+    background-image: url('images/wall2.jpg');
     background-position: center;
     background-size: cover;
 }
