@@ -24,7 +24,7 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     color: whitesmoke;
-    animation: backgroundTransition 20s linear infinite;
+    animation: backgroundTransition 20s ease-in-out infinite;
     animation-fill-mode: forwards;
 }
 
