@@ -71,7 +71,9 @@ nav li a:hover {
     color: #dd8d0c;
     border-bottom: 1px solid #777;
 }
-
+.nav .icon {
+    display: none;
+}
 /* Section */
 section {
     margin: 0;
@@ -318,9 +320,6 @@ footer {
         border: none;
         margin: 0;
     }
-    .gsearch, .search-icon {
-        display: none;
-    }
     header {
         display: flex;
         justify-content: center;
@@ -329,10 +328,9 @@ footer {
     }
 
     /* Initially hide all nav items except the icon */
-    .nav li a {
+    nav li a {
         display: none;
     }
-
     .nav a.icon {
         display: block;
         float: right;
