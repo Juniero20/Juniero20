@@ -49,7 +49,7 @@ include 'php/welcome.php';
         <input type="submit" value="Submit">
       </form>
       <div class="containerSignin">
-        <p>Already have an account? <a href="log.html" style="color:#dd8d0c; text-decoration: none;">Log in</a> and continue.</p>
+        <p>Already have an account? <a href="login.html" style="color:#dd8d0c; text-decoration: none;">Log in</a> and continue.</p>
       </div>
     </div>
   </div>
