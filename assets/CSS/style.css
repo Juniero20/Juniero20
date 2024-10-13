@@ -19,24 +19,24 @@ h2, h3 {
 /* Main */
 main {
     width: 100%;
-    background-image: url("images/home.jpg");
+    background-image: url("../images/home.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: whitesmoke;
-    animation: backgroundTransition 20s ease-in-out infinite;
+    animation: backgroundTransition 45s ease-in-out infinite;
     animation-fill-mode: forwards;
 }
 
 @keyframes backgroundTransition {
     0% {
-        background-image: url('images/home.jpg');
+        background-image: url('../images/home.jpg');
     }
     50% {
-        background-image: url('images/chairs.jpg');
+        background-image: url('../images/chairs.jpg');
     }
     100% {
-        background-image: url('images/furniture.jpg');
+        background-image: url('../images/furniture.jpg');
     }
 }
 
@@ -69,10 +69,53 @@ nav a {
 
 nav li a:hover {
     color: #dd8d0c;
-    border-bottom: 1px solid #777;
+    border-bottom: 6px solid #777;
 }
 .nav .icon {
     display: none;
+}
+/* useraccount */
+.userAccount {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    text-decoration: none;
+}
+.userAccount li {
+    display: inline;
+    text-decoration: none;
+}
+.userAccount li a {
+    text-decoration: none;
+}
+/*style login and signup buttons */
+.login, .signup {
+    margin: 0;
+    padding: 10px;
+    background-color: #dd8d0c;
+    border: none;
+    color: whitesmoke;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*login border-radius property */
+.login {
+    border-radius: 0 15px 15px 0;
+}
+/* signup border-radius property */
+.signup {
+    border-radius: 15px 0 0 15px;
+}
+/* login and signup hover and active effect */
+.login:hover,
+.signup:hover {
+    background-color: #30354e;
+}
+
+.login:active,
+.signup:active {
+    background-color: #30354e;
+    box-shadow: 0 5px #dd8d0c;
 }
 /* Section */
 section {
@@ -160,7 +203,7 @@ section {
 .Contact {
     margin: 0;
     padding: 0;
-    background-image: url('images/wall2.jpg');
+    background-image: url('../images/wall2.jpg');
     background-position: center;
     background-size: cover;
 }
