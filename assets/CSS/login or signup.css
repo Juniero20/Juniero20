@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #30354e;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Auth Sections */
+.auth-section {
+  background-color: #474b6a;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-container {
+  width: 300px;
+}
+
+.auth-title {
+  text-align: center;
+  color: #dd8d0c;
+  margin-bottom: 20px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  display: block;
+  color: #d3d3d3;
+}
+
+.input-group input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #30354e;
+  color: #fff;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #dd8d0c;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #c67900;
+}
+
+.toggle-form {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.toggle-form a {
+  color: #dd8d0c;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
