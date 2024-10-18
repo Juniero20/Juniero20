@@ -1,31 +1,21 @@
-// signup form script
-// Function to validate if passwords match 
-function validateForm() {
-  var password = document.getElementById("pwd").value;
-  var confirmPassword = document.getElementById("pwd_confirm").value;
-  var responseText = document.getElementById("responseText");
-  
-  if (password !== confirmPassword) {
-      responseText.innerHTML = "Passwords do not match!";
-      responseText.style.color = "red"; // Optional: Set the text color to red
-      return false;
-  } else {
-      responseText.innerHTML = ""; // Clear the message when passwords match
-      return true;
-  }
-}
+// Toggle between Login and Signup forms
+document.getElementById('show-signup').addEventListener('click', function () {
+  document.querySelector('.auth-section').classList.add('hidden');
+  document.getElementById('signup-section').classList.remove('hidden');
+});
 
-// Function to toggle the visibility of password fields
-function togglePasswordVisibility() {
-  var passwordField = document.getElementById("pwd");
-  var confirmPasswordField = document.getElementById("pwd_confirm");
-  var showPasswords = document.getElementById("showPasswords");
+document.getElementById('show-login').addEventListener('click', function () {
+  document.querySelector('.auth-section').classList.remove('hidden');
+  document.getElementById('signup-section').classList.add('hidden');
+});
 
-  if (showPasswords.checked) {
-      passwordField.type = "text";
-      confirmPasswordField.type = "text";
-  } else {
-      passwordField.type = "password";
-      confirmPasswordField.type = "password";
-  }
-}
+// Handle form submissions (you can replace this with actual form handling)
+document.getElementById('login-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  alert('Logged in!');
+});
+
+document.getElementById('signup-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  alert('Signed up!');
+});
